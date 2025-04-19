@@ -1,0 +1,29 @@
+version: '3.8'
+services:
+  db:
+    image: postgres:15
+    restart: always
+    env_file:
+      - config.env
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    command: ["postgres", "-c", "fsync=off"]
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $DB_USER"]
+      interval: 5s
+      retries: 5
+
+  app:
+    build: .
+    env_file:
+      - config.env
+    ports:
+      - "${APP_PORT}:${APP_PORT}"
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  db_data:
