@@ -76,7 +76,7 @@
               "RelativeDocumentMoniker": "README.md",
               "ToolTip": "C:\\Users\\aswad\\Desktop\\Projects\\wallet-service\\wallet-service\\README.md",
               "RelativeToolTip": "README.md",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAADsAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAAADsAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
               "WhenOpened": "2025-04-19T11:18:17.007Z",
               "EditorCaption": ""
@@ -198,8 +198,7 @@
               "RelativeToolTip": "docker-compose.yml",
               "ViewState": "AgIAABgAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2025-04-19T08:51:30.404Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-19T08:51:30.404Z"
             },
             {
               "$type": "Document",
