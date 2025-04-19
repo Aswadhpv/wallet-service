@@ -1,0 +1,76 @@
+basePath: /api/v1
+definitions:
+  handler.operationRequest:
+    properties:
+      amount:
+        type: integer
+      operationType:
+        type: string
+      walletId:
+        type: string
+    type: object
+host: localhost:8080
+info:
+  contact: {}
+  description: Simple wallet deposit/withdraw service.
+  title: Wallet Service API
+  version: "1.0"
+paths:
+  /wallet:
+    post:
+      consumes:
+      - application/json
+      description: Performs a deposit or withdrawal on a wallet
+      parameters:
+      - description: operation payload
+        in: body
+        name: payload
+        required: true
+        schema:
+          $ref: '#/definitions/handler.operationRequest'
+      produces:
+      - text/plain
+      responses:
+        "204":
+          description: No Content
+        "400":
+          description: invalid request
+          schema:
+            type: string
+        "409":
+          description: insufficient funds
+          schema:
+            type: string
+        "500":
+          description: server error
+          schema:
+            type: string
+      summary: Deposit or withdraw money
+      tags:
+      - wallets
+  /wallets/{id}:
+    get:
+      description: Returns the current balance for a given wallet ID
+      parameters:
+      - description: Wallet UUID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties:
+              type: integer
+            type: object
+        "500":
+          description: server error
+          schema:
+            type: string
+      summary: Get wallet balance
+      tags:
+      - wallets
+swagger: "2.0"

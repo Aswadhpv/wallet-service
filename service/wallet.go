@@ -2,32 +2,44 @@ package service
 
 import (
 	"context"
+	"errors"
 
-	"github.com/yourusername/wallet-service/repository"
+	"github.com/Aswadhpv/wallet-service/repository"
 )
 
+var ErrInsufficientFunds = errors.New("insufficient funds")
+
+// WalletService defines the interface, still useful if you want to mock in tests
 type WalletService interface {
-	Deposit(ctx context.Context, id string, amount int64) error
-	Withdraw(ctx context.Context, id string, amount int64) error
-	GetBalance(ctx context.Context, id string) (int64, error)
+	Deposit(ctx context.Context, walletID string, amount int64) error
+	Withdraw(ctx context.Context, walletID string, amount int64) error
+	GetBalance(ctx context.Context, walletID string) (int64, error)
 }
 
-type walletService struct {
-	repo repository.WalletRepo
+// WalletServiceImpl is the concrete implementation
+type WalletServiceImpl struct {
+	repo repository.WalletRepository
 }
 
-func NewWalletService(r repository.WalletRepo) WalletService {
-	return &walletService{repo: r}
+func NewWalletService(repo repository.WalletRepository) *WalletServiceImpl {
+	return &WalletServiceImpl{repo: repo}
 }
 
-func (s *walletService) Deposit(ctx context.Context, id string, amount int64) error {
-	return s.repo.ApplyOperation(ctx, id, "DEPOSIT", amount)
+func (s *WalletServiceImpl) Deposit(ctx context.Context, walletID string, amount int64) error {
+	return s.repo.ApplyOperation(ctx, walletID, "DEPOSIT", amount)
 }
 
-func (s *walletService) Withdraw(ctx context.Context, id string, amount int64) error {
-	return s.repo.ApplyOperation(ctx, id, "WITHDRAW", amount)
+func (s *WalletServiceImpl) Withdraw(ctx context.Context, walletID string, amount int64) error {
+	balance, err := s.repo.GetBalance(ctx, walletID)
+	if err != nil {
+		return err
+	}
+	if balance < amount {
+		return ErrInsufficientFunds
+	}
+	return s.repo.ApplyOperation(ctx, walletID, "WITHDRAW", amount)
 }
 
-func (s *walletService) GetBalance(ctx context.Context, id string) (int64, error) {
-	return s.repo.GetBalance(ctx, id)
+func (s *WalletServiceImpl) GetBalance(ctx context.Context, walletID string) (int64, error) {
+	return s.repo.GetBalance(ctx, walletID)
 }

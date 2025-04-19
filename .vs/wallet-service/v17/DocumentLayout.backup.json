@@ -1,0 +1,257 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\aswad\\Desktop\\Projects\\wallet-service\\wallet-service\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\aswad\\Desktop\\Projects\\wallet-service\\wallet-service\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\aswad\\Desktop\\Projects\\wallet-service\\wallet-service\\Dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\aswad\\Desktop\\Projects\\wallet-service\\wallet-service\\handler\\wallet.go||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:handler\\wallet.go||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\aswad\\Desktop\\Projects\\wallet-service\\wallet-service\\main.go||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:main.go||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\aswad\\Desktop\\Projects\\wallet-service\\wallet-service\\db\\init.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:db\\init.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\aswad\\Desktop\\Projects\\wallet-service\\wallet-service\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\aswad\\Desktop\\Projects\\wallet-service\\wallet-service\\service\\wallet.go||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:service\\wallet.go||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\aswad\\Desktop\\Projects\\wallet-service\\wallet-service\\repository\\wallet.go||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:repository\\wallet.go||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\aswad\\Desktop\\Projects\\wallet-service\\wallet-service\\go.mod||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:go.mod||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\aswad\\Desktop\\Projects\\wallet-service\\wallet-service\\config\\config.go||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:config\\config.go||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\aswad\\Desktop\\Projects\\wallet-service\\wallet-service\\db\\db.go||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:db\\db.go||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\aswad\\Desktop\\Projects\\wallet-service\\wallet-service\\handler\\wallet_test.go||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:handler\\wallet_test.go||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\aswad\\Desktop\\Projects\\wallet-service\\wallet-service\\repository\\wallet_test.go||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:repository\\wallet_test.go||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\aswad\\Desktop\\Projects\\wallet-service\\wallet-service\\db\\init.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:db\\init.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 201,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Projects\\wallet-service\\wallet-service\\Dockerfile",
+              "RelativeDocumentMoniker": "Dockerfile",
+              "ToolTip": "C:\\Users\\aswad\\Desktop\\Projects\\wallet-service\\wallet-service\\Dockerfile",
+              "RelativeToolTip": "Dockerfile",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAmwBAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-19T09:02:48.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": ".env",
+              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Projects\\wallet-service\\wallet-service\\.env",
+              "RelativeDocumentMoniker": ".env",
+              "ToolTip": "C:\\Users\\aswad\\Desktop\\Projects\\wallet-service\\wallet-service\\.env",
+              "RelativeToolTip": ".env",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-19T08:59:20.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "init.sql ",
+              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Projects\\wallet-service\\wallet-service\\db\\init.sql",
+              "RelativeDocumentMoniker": "db\\init.sql",
+              "ToolTip": "init.sql ",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-04-19T08:52:50.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "config.go",
+              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Projects\\wallet-service\\wallet-service\\config\\config.go",
+              "RelativeDocumentMoniker": "config\\config.go",
+              "ToolTip": "C:\\Users\\aswad\\Desktop\\Projects\\wallet-service\\wallet-service\\config\\config.go",
+              "RelativeToolTip": "config\\config.go",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKOSURBVDhPtZTBTlpBFIZ/QTDQVqVCaFCjELQr2ek7GNOGpi5qmtjYtD6JL\u002BDKR6ALm1DSbt0a41INurBpXBCgQhVFEeXS/5/cS7hqTJu0f/JxmXvPnJkz55zBP1W73e6x/zrykTB5RLx68YBapE6OybVeSN0OQ\u002BQlSZM48ZOH1CQ/SI5kSZV0pJ29IwWila0/RLZF8oHIR0fPiFa548zn81nT09NWJBKxPB6P65uN5nwlMQKPfqgnZJx0joCTMTY2huXlZczMzCAQCGBqagoDAwPo6XEdvQY6oscaOAcfIW\u002BJEoJYLIbZ2Vmk02kMDg6iWq2iWCya9xMTEwiFQrAsC2dnZzKXauQTOXaWek4Usp6Yn5/H4uIi4vG4KgEXFxeoVCro6\u002BuD3\u002B9Hq9VCNpvF6uqqzKXv5AXJOzvUzt7YT4TDYZyfnxsHqVTK7EqMjo5iaGjIOFxfX8fBwYHMpV8kQ47vdTgyMoLT01MzYWtrC/39/YhGozg5OcHl5SUymQw2NzdRKpVkLnUcOklxyev14ubmBvV6HUdHR1hbW0O5XEaz2cTu7i42NjbQaDRsa7fuddjb24tgMGjCSyaTJlQl4erqCjs7O6jVari\u002B7jSHS/c6dEpkcnISrD/jWMlRuIlEAgsLCxgfV5XdVbfDtv3E9va2CXV4eNiUipwqEToGlUyhUMD\u002B/r5tbaS5Zr6TlKfkNYlqoLPL5/M4PDw0Icuh2Nvbw8rKCnK5nElal5Qd1WHFjCi13hdyp/VYd9bc3Jy1tLRk8Vxd37r4RkzrOVJjvydq9L\u002B9HMrkIzG3U3dTKuxXNupNLeJq2i7pvJRmXV\u002BK7DMx4d6eoFVU3Gp0J2G3bZzkaYe6YH8S3Y3/Q8Bv/swBV8Rtel0AAAAASUVORK5CYII=",
+              "WhenOpened": "2025-04-19T08:52:20.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "db.go",
+              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Projects\\wallet-service\\wallet-service\\db\\db.go",
+              "RelativeDocumentMoniker": "db\\db.go",
+              "ToolTip": "C:\\Users\\aswad\\Desktop\\Projects\\wallet-service\\wallet-service\\db\\db.go",
+              "RelativeToolTip": "db\\db.go",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKOSURBVDhPtZTBTlpBFIZ/QTDQVqVCaFCjELQr2ek7GNOGpi5qmtjYtD6JL\u002BDKR6ALm1DSbt0a41INurBpXBCgQhVFEeXS/5/cS7hqTJu0f/JxmXvPnJkz55zBP1W73e6x/zrykTB5RLx68YBapE6OybVeSN0OQ\u002BQlSZM48ZOH1CQ/SI5kSZV0pJ29IwWila0/RLZF8oHIR0fPiFa548zn81nT09NWJBKxPB6P65uN5nwlMQKPfqgnZJx0joCTMTY2huXlZczMzCAQCGBqagoDAwPo6XEdvQY6oscaOAcfIW\u002BJEoJYLIbZ2Vmk02kMDg6iWq2iWCya9xMTEwiFQrAsC2dnZzKXauQTOXaWek4Usp6Yn5/H4uIi4vG4KgEXFxeoVCro6\u002BuD3\u002B9Hq9VCNpvF6uqqzKXv5AXJOzvUzt7YT4TDYZyfnxsHqVTK7EqMjo5iaGjIOFxfX8fBwYHMpV8kQ47vdTgyMoLT01MzYWtrC/39/YhGozg5OcHl5SUymQw2NzdRKpVkLnUcOklxyev14ubmBvV6HUdHR1hbW0O5XEaz2cTu7i42NjbQaDRsa7fuddjb24tgMGjCSyaTJlQl4erqCjs7O6jVari\u002B7jSHS/c6dEpkcnISrD/jWMlRuIlEAgsLCxgfV5XdVbfDtv3E9va2CXV4eNiUipwqEToGlUyhUMD\u002B/r5tbaS5Zr6TlKfkNYlqoLPL5/M4PDw0Icuh2Nvbw8rKCnK5nElal5Qd1WHFjCi13hdyp/VYd9bc3Jy1tLRk8Vxd37r4RkzrOVJjvydq9L\u002B9HMrkIzG3U3dTKuxXNupNLeJq2i7pvJRmXV\u002BK7DMx4d6eoFVU3Gp0J2G3bZzkaYe6YH8S3Y3/Q8Bv/swBV8Rtel0AAAAASUVORK5CYII=",
+              "WhenOpened": "2025-04-19T08:52:16.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "wallet.go",
+              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Projects\\wallet-service\\wallet-service\\handler\\wallet.go",
+              "RelativeDocumentMoniker": "handler\\wallet.go",
+              "ToolTip": "C:\\Users\\aswad\\Desktop\\Projects\\wallet-service\\wallet-service\\handler\\wallet.go",
+              "RelativeToolTip": "handler\\wallet.go",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKOSURBVDhPtZTBTlpBFIZ/QTDQVqVCaFCjELQr2ek7GNOGpi5qmtjYtD6JL\u002BDKR6ALm1DSbt0a41INurBpXBCgQhVFEeXS/5/cS7hqTJu0f/JxmXvPnJkz55zBP1W73e6x/zrykTB5RLx68YBapE6OybVeSN0OQ\u002BQlSZM48ZOH1CQ/SI5kSZV0pJ29IwWila0/RLZF8oHIR0fPiFa548zn81nT09NWJBKxPB6P65uN5nwlMQKPfqgnZJx0joCTMTY2huXlZczMzCAQCGBqagoDAwPo6XEdvQY6oscaOAcfIW\u002BJEoJYLIbZ2Vmk02kMDg6iWq2iWCya9xMTEwiFQrAsC2dnZzKXauQTOXaWek4Usp6Yn5/H4uIi4vG4KgEXFxeoVCro6\u002BuD3\u002B9Hq9VCNpvF6uqqzKXv5AXJOzvUzt7YT4TDYZyfnxsHqVTK7EqMjo5iaGjIOFxfX8fBwYHMpV8kQ47vdTgyMoLT01MzYWtrC/39/YhGozg5OcHl5SUymQw2NzdRKpVkLnUcOklxyev14ubmBvV6HUdHR1hbW0O5XEaz2cTu7i42NjbQaDRsa7fuddjb24tgMGjCSyaTJlQl4erqCjs7O6jVari\u002B7jSHS/c6dEpkcnISrD/jWMlRuIlEAgsLCxgfV5XdVbfDtv3E9va2CXV4eNiUipwqEToGlUyhUMD\u002B/r5tbaS5Zr6TlKfkNYlqoLPL5/M4PDw0Icuh2Nvbw8rKCnK5nElal5Qd1WHFjCi13hdyp/VYd9bc3Jy1tLRk8Vxd37r4RkzrOVJjvydq9L\u002B9HMrkIzG3U3dTKuxXNupNLeJq2i7pvJRmXV\u002BK7DMx4d6eoFVU3Gp0J2G3bZzkaYe6YH8S3Y3/Q8Bv/swBV8Rtel0AAAAASUVORK5CYII=",
+              "WhenOpened": "2025-04-19T08:52:02.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "wallet_test.go",
+              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Projects\\wallet-service\\wallet-service\\handler\\wallet_test.go",
+              "RelativeDocumentMoniker": "handler\\wallet_test.go",
+              "ToolTip": "C:\\Users\\aswad\\Desktop\\Projects\\wallet-service\\wallet-service\\handler\\wallet_test.go",
+              "RelativeToolTip": "handler\\wallet_test.go",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAIAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKOSURBVDhPtZTBTlpBFIZ/QTDQVqVCaFCjELQr2ek7GNOGpi5qmtjYtD6JL\u002BDKR6ALm1DSbt0a41INurBpXBCgQhVFEeXS/5/cS7hqTJu0f/JxmXvPnJkz55zBP1W73e6x/zrykTB5RLx68YBapE6OybVeSN0OQ\u002BQlSZM48ZOH1CQ/SI5kSZV0pJ29IwWila0/RLZF8oHIR0fPiFa548zn81nT09NWJBKxPB6P65uN5nwlMQKPfqgnZJx0joCTMTY2huXlZczMzCAQCGBqagoDAwPo6XEdvQY6oscaOAcfIW\u002BJEoJYLIbZ2Vmk02kMDg6iWq2iWCya9xMTEwiFQrAsC2dnZzKXauQTOXaWek4Usp6Yn5/H4uIi4vG4KgEXFxeoVCro6\u002BuD3\u002B9Hq9VCNpvF6uqqzKXv5AXJOzvUzt7YT4TDYZyfnxsHqVTK7EqMjo5iaGjIOFxfX8fBwYHMpV8kQ47vdTgyMoLT01MzYWtrC/39/YhGozg5OcHl5SUymQw2NzdRKpVkLnUcOklxyev14ubmBvV6HUdHR1hbW0O5XEaz2cTu7i42NjbQaDRsa7fuddjb24tgMGjCSyaTJlQl4erqCjs7O6jVari\u002B7jSHS/c6dEpkcnISrD/jWMlRuIlEAgsLCxgfV5XdVbfDtv3E9va2CXV4eNiUipwqEToGlUyhUMD\u002B/r5tbaS5Zr6TlKfkNYlqoLPL5/M4PDw0Icuh2Nvbw8rKCnK5nElal5Qd1WHFjCi13hdyp/VYd9bc3Jy1tLRk8Vxd37r4RkzrOVJjvydq9L\u002B9HMrkIzG3U3dTKuxXNupNLeJq2i7pvJRmXV\u002BK7DMx4d6eoFVU3Gp0J2G3bZzkaYe6YH8S3Y3/Q8Bv/swBV8Rtel0AAAAASUVORK5CYII=",
+              "WhenOpened": "2025-04-19T08:51:47.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "wallet.go",
+              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Projects\\wallet-service\\wallet-service\\repository\\wallet.go",
+              "RelativeDocumentMoniker": "repository\\wallet.go",
+              "ToolTip": "C:\\Users\\aswad\\Desktop\\Projects\\wallet-service\\wallet-service\\repository\\wallet.go",
+              "RelativeToolTip": "repository\\wallet.go",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKOSURBVDhPtZTBTlpBFIZ/QTDQVqVCaFCjELQr2ek7GNOGpi5qmtjYtD6JL\u002BDKR6ALm1DSbt0a41INurBpXBCgQhVFEeXS/5/cS7hqTJu0f/JxmXvPnJkz55zBP1W73e6x/zrykTB5RLx68YBapE6OybVeSN0OQ\u002BQlSZM48ZOH1CQ/SI5kSZV0pJ29IwWila0/RLZF8oHIR0fPiFa548zn81nT09NWJBKxPB6P65uN5nwlMQKPfqgnZJx0joCTMTY2huXlZczMzCAQCGBqagoDAwPo6XEdvQY6oscaOAcfIW\u002BJEoJYLIbZ2Vmk02kMDg6iWq2iWCya9xMTEwiFQrAsC2dnZzKXauQTOXaWek4Usp6Yn5/H4uIi4vG4KgEXFxeoVCro6\u002BuD3\u002B9Hq9VCNpvF6uqqzKXv5AXJOzvUzt7YT4TDYZyfnxsHqVTK7EqMjo5iaGjIOFxfX8fBwYHMpV8kQ47vdTgyMoLT01MzYWtrC/39/YhGozg5OcHl5SUymQw2NzdRKpVkLnUcOklxyev14ubmBvV6HUdHR1hbW0O5XEaz2cTu7i42NjbQaDRsa7fuddjb24tgMGjCSyaTJlQl4erqCjs7O6jVari\u002B7jSHS/c6dEpkcnISrD/jWMlRuIlEAgsLCxgfV5XdVbfDtv3E9va2CXV4eNiUipwqEToGlUyhUMD\u002B/r5tbaS5Zr6TlKfkNYlqoLPL5/M4PDw0Icuh2Nvbw8rKCnK5nElal5Qd1WHFjCi13hdyp/VYd9bc3Jy1tLRk8Vxd37r4RkzrOVJjvydq9L\u002B9HMrkIzG3U3dTKuxXNupNLeJq2i7pvJRmXV\u002BK7DMx4d6eoFVU3Gp0J2G3bZzkaYe6YH8S3Y3/Q8Bv/swBV8Rtel0AAAAASUVORK5CYII=",
+              "WhenOpened": "2025-04-19T08:51:43.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "wallet_test.go",
+              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Projects\\wallet-service\\wallet-service\\repository\\wallet_test.go",
+              "RelativeDocumentMoniker": "repository\\wallet_test.go",
+              "ToolTip": "C:\\Users\\aswad\\Desktop\\Projects\\wallet-service\\wallet-service\\repository\\wallet_test.go",
+              "RelativeToolTip": "repository\\wallet_test.go",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKOSURBVDhPtZTBTlpBFIZ/QTDQVqVCaFCjELQr2ek7GNOGpi5qmtjYtD6JL\u002BDKR6ALm1DSbt0a41INurBpXBCgQhVFEeXS/5/cS7hqTJu0f/JxmXvPnJkz55zBP1W73e6x/zrykTB5RLx68YBapE6OybVeSN0OQ\u002BQlSZM48ZOH1CQ/SI5kSZV0pJ29IwWila0/RLZF8oHIR0fPiFa548zn81nT09NWJBKxPB6P65uN5nwlMQKPfqgnZJx0joCTMTY2huXlZczMzCAQCGBqagoDAwPo6XEdvQY6oscaOAcfIW\u002BJEoJYLIbZ2Vmk02kMDg6iWq2iWCya9xMTEwiFQrAsC2dnZzKXauQTOXaWek4Usp6Yn5/H4uIi4vG4KgEXFxeoVCro6\u002BuD3\u002B9Hq9VCNpvF6uqqzKXv5AXJOzvUzt7YT4TDYZyfnxsHqVTK7EqMjo5iaGjIOFxfX8fBwYHMpV8kQ47vdTgyMoLT01MzYWtrC/39/YhGozg5OcHl5SUymQw2NzdRKpVkLnUcOklxyev14ubmBvV6HUdHR1hbW0O5XEaz2cTu7i42NjbQaDRsa7fuddjb24tgMGjCSyaTJlQl4erqCjs7O6jVari\u002B7jSHS/c6dEpkcnISrD/jWMlRuIlEAgsLCxgfV5XdVbfDtv3E9va2CXV4eNiUipwqEToGlUyhUMD\u002B/r5tbaS5Zr6TlKfkNYlqoLPL5/M4PDw0Icuh2Nvbw8rKCnK5nElal5Qd1WHFjCi13hdyp/VYd9bc3Jy1tLRk8Vxd37r4RkzrOVJjvydq9L\u002B9HMrkIzG3U3dTKuxXNupNLeJq2i7pvJRmXV\u002BK7DMx4d6eoFVU3Gp0J2G3bZzkaYe6YH8S3Y3/Q8Bv/swBV8Rtel0AAAAASUVORK5CYII=",
+              "WhenOpened": "2025-04-19T08:51:40.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Projects\\wallet-service\\wallet-service\\docker-compose.yml",
+              "RelativeDocumentMoniker": "docker-compose.yml",
+              "ToolTip": "C:\\Users\\aswad\\Desktop\\Projects\\wallet-service\\wallet-service\\docker-compose.yml",
+              "RelativeToolTip": "docker-compose.yml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2025-04-19T08:51:30.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "wallet.go",
+              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Projects\\wallet-service\\wallet-service\\service\\wallet.go",
+              "RelativeDocumentMoniker": "service\\wallet.go",
+              "ToolTip": "C:\\Users\\aswad\\Desktop\\Projects\\wallet-service\\wallet-service\\service\\wallet.go",
+              "RelativeToolTip": "service\\wallet.go",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACQAAAAWAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKOSURBVDhPtZTBTlpBFIZ/QTDQVqVCaFCjELQr2ek7GNOGpi5qmtjYtD6JL\u002BDKR6ALm1DSbt0a41INurBpXBCgQhVFEeXS/5/cS7hqTJu0f/JxmXvPnJkz55zBP1W73e6x/zrykTB5RLx68YBapE6OybVeSN0OQ\u002BQlSZM48ZOH1CQ/SI5kSZV0pJ29IwWila0/RLZF8oHIR0fPiFa548zn81nT09NWJBKxPB6P65uN5nwlMQKPfqgnZJx0joCTMTY2huXlZczMzCAQCGBqagoDAwPo6XEdvQY6oscaOAcfIW\u002BJEoJYLIbZ2Vmk02kMDg6iWq2iWCya9xMTEwiFQrAsC2dnZzKXauQTOXaWek4Usp6Yn5/H4uIi4vG4KgEXFxeoVCro6\u002BuD3\u002B9Hq9VCNpvF6uqqzKXv5AXJOzvUzt7YT4TDYZyfnxsHqVTK7EqMjo5iaGjIOFxfX8fBwYHMpV8kQ47vdTgyMoLT01MzYWtrC/39/YhGozg5OcHl5SUymQw2NzdRKpVkLnUcOklxyev14ubmBvV6HUdHR1hbW0O5XEaz2cTu7i42NjbQaDRsa7fuddjb24tgMGjCSyaTJlQl4erqCjs7O6jVari\u002B7jSHS/c6dEpkcnISrD/jWMlRuIlEAgsLCxgfV5XdVbfDtv3E9va2CXV4eNiUipwqEToGlUyhUMD\u002B/r5tbaS5Zr6TlKfkNYlqoLPL5/M4PDw0Icuh2Nvbw8rKCnK5nElal5Qd1WHFjCi13hdyp/VYd9bc3Jy1tLRk8Vxd37r4RkzrOVJjvydq9L\u002B9HMrkIzG3U3dTKuxXNupNLeJq2i7pvJRmXV\u002BK7DMx4d6eoFVU3Gp0J2G3bZzkaYe6YH8S3Y3/Q8Bv/swBV8Rtel0AAAAASUVORK5CYII=",
+              "WhenOpened": "2025-04-19T08:49:58.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "main.go",
+              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Projects\\wallet-service\\wallet-service\\main.go",
+              "RelativeDocumentMoniker": "main.go",
+              "ToolTip": "C:\\Users\\aswad\\Desktop\\Projects\\wallet-service\\wallet-service\\main.go",
+              "RelativeToolTip": "main.go",
+              "ViewState": "AgIAACAAAAAAAAAAAAAmwDYAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKOSURBVDhPtZTBTlpBFIZ/QTDQVqVCaFCjELQr2ek7GNOGpi5qmtjYtD6JL\u002BDKR6ALm1DSbt0a41INurBpXBCgQhVFEeXS/5/cS7hqTJu0f/JxmXvPnJkz55zBP1W73e6x/zrykTB5RLx68YBapE6OybVeSN0OQ\u002BQlSZM48ZOH1CQ/SI5kSZV0pJ29IwWila0/RLZF8oHIR0fPiFa548zn81nT09NWJBKxPB6P65uN5nwlMQKPfqgnZJx0joCTMTY2huXlZczMzCAQCGBqagoDAwPo6XEdvQY6oscaOAcfIW\u002BJEoJYLIbZ2Vmk02kMDg6iWq2iWCya9xMTEwiFQrAsC2dnZzKXauQTOXaWek4Usp6Yn5/H4uIi4vG4KgEXFxeoVCro6\u002BuD3\u002B9Hq9VCNpvF6uqqzKXv5AXJOzvUzt7YT4TDYZyfnxsHqVTK7EqMjo5iaGjIOFxfX8fBwYHMpV8kQ47vdTgyMoLT01MzYWtrC/39/YhGozg5OcHl5SUymQw2NzdRKpVkLnUcOklxyev14ubmBvV6HUdHR1hbW0O5XEaz2cTu7i42NjbQaDRsa7fuddjb24tgMGjCSyaTJlQl4erqCjs7O6jVari\u002B7jSHS/c6dEpkcnISrD/jWMlRuIlEAgsLCxgfV5XdVbfDtv3E9va2CXV4eNiUipwqEToGlUyhUMD\u002B/r5tbaS5Zr6TlKfkNYlqoLPL5/M4PDw0Icuh2Nvbw8rKCnK5nElal5Qd1WHFjCi13hdyp/VYd9bc3Jy1tLRk8Vxd37r4RkzrOVJjvydq9L\u002B9HMrkIzG3U3dTKuxXNupNLeJq2i7pvJRmXV\u002BK7DMx4d6eoFVU3Gp0J2G3bZzkaYe6YH8S3Y3/Q8Bv/swBV8Rtel0AAAAASUVORK5CYII=",
+              "WhenOpened": "2025-04-19T08:48:32.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "go.mod",
+              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Projects\\wallet-service\\wallet-service\\go.mod",
+              "RelativeDocumentMoniker": "go.mod",
+              "ToolTip": "C:\\Users\\aswad\\Desktop\\Projects\\wallet-service\\wallet-service\\go.mod",
+              "RelativeToolTip": "go.mod",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAHAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPcSURBVDhPlZTfb9tUFMeP7djX9zq/7CSN0zSJ07RxQ1lbBBs/ttKugYJ4gGlbxwQCgQRsQkITvPAEb7zywBP8A7yy/wDQEILBJqSt6gra6K\u002BQdkmbNE3ixD9xilU0pR3iIx3Zvt9zvtY599oM/AenFVr95gJ7\u002BfJjztzv27C1sgtVT\u002BrHcRzauz2UYo4T3phCkxIyLsWw/c6bE\u002BxUMesLeHI/FEU91FCKROKJVFblRHmIleSknB4uSJFYwpMP5aGGjpjNWCPzaqewAO2xc2Dknh\u002Bz3TVPPpQjDUNhkRLSk4r1yNlC4/GPoDb1IejqmTGcmlB6mpfWx5GGr5y/yD19ajaNeGF4P41igUVEeerUdPrMwkXspfVxpGG4elOJbl1Lh7d/Edjt24DqiyDu3CTR8g\u002Bp4NYN9yWHc\u002BSxmZU7zx7D94ty98\u002BRYG0RyM4N4Eq/0sba4s7qysbaj\u002Bvaopf6AH2GyEdBQRbgZERbGOUqJwf0lSipLwNuLQNbXwWtumPer5uVTZv/blczwbK9Qo\u002B\u002BlkOEhbdmctxwLDDG\u002BhiZYmiwgQLHDZqjgUOMrET96tuzIyhMOK/qX/oMHRTi9tTzijE2n7YT40ELR8BmeLDcMHkJjAFV6OaLyUb\u002BXM5GQeSVHfBAy0\u002BqUd\u002BVs1NRn6TMCanxIqccH3DSz4CWnIbW0GmoyTNQkU5QNTLU6nbbpXFubaO229Qqe8ZB4weG08cGw6\u002BfiD0xk7Bfq9ric3xqYpSLq4QSFTBCWegGc6CRFOxxUWjpNm2VlsQJbTkV4Cmj7TCNcr2r9XwODN99YVhdKKBXzbtLH9R0nCexJOEJcUfIgEP/Mxnb6ILVroNVWeGtP65nY\u002BWl4/lUUGv72NWf7zXKvZx9Q4xYmFeZmXF/66VmeTvfqWxRYbZNEboDjKMDbbbA162Br7kG3OZvwN67Rjl3fqJ4o\u002B3zh9juRttevV7Sb5lmb/tcvvz0AlWMlz72l29dqq03MptVGsJhDIIfA4tZYBgGfMjdZcoEvalDvdqB8pYGUdGGSEb4S09PfPX9bvaz9z752t7vJSvzcixgKERoD0QHAZSkDSJuATGrgPbKgBobwNXXATXLQJxtiIZaMJqzITXq/pHincig7GRGhgS30js2yC6Pc3wrww9wOJglEM8TkDIEAkkCQoIAiRPgYwSQG1gmEHK1RIGAOOJqgwghfyvFwcajB4b6zt1sR2tIHQZDl8VgBtxvP4SBEt2IYHAkDLY7gt665Y7BEjAYBIPmw9AG99qsS3p1Kdvz2p/h5y9yL0\u002BK1hXeseZ6z/8Xi2W\u002Bvb3HfPH\u002BVf3q36OOThi\u002Bn\u002B0eAAAAAElFTkSuQmCC",
+              "WhenOpened": "2025-04-19T08:47:57.695Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 199,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

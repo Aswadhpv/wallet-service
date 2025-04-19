@@ -1,15 +1,30 @@
-# builder
-FROM golang:1.20-alpine AS builder
-WORKDIR /app
-COPY go.mod go.sum ./
-RUN go mod download
-COPY . .
-RUN go build -o wallet-service
+﻿# ─── Stage 1: Build ────────────────────────────────────────────────────────────
+FROM golang:1.24-alpine as builder
 
-# final
-FROM alpine:latest
+RUN apk add --no-cache git
+
 WORKDIR /app
+
+# Copy everything (including docs/)
+COPY . .
+
+# Build it
+RUN go mod tidy && go build -o wallet-service
+
+# ─── Stage 2: Minimal runtime ──────────────────────────────────────────────────
+FROM alpine:latest
+
+WORKDIR /app
+
+# Copy binary
 COPY --from=builder /app/wallet-service .
-COPY config.env .
+
+# Copy Swagger docs so http‑swagger can serve them
+COPY --from=builder /app/docs ./docs
+
+# Copy your env file
+COPY .env .
+
 EXPOSE 8080
+
 ENTRYPOINT ["./wallet-service"]

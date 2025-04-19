@@ -1,13 +1,16 @@
-version: '3.8'
 services:
   db:
     image: postgres:15
     restart: always
     env_file:
-      - config.env
+      - ./.env
+    environment:
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_DB=${DB_NAME}
     volumes:
       - db_data:/var/lib/postgresql/data
-    command: ["postgres", "-c", "fsync=off"]
+      - ./db/init.sql:/docker-entrypoint-initdb.d/01-init.sql
     ports:
       - "5432:5432"
     healthcheck:
@@ -18,12 +21,16 @@ services:
   app:
     build: .
     env_file:
-      - config.env
+      - ./.env
     ports:
       - "${APP_PORT}:${APP_PORT}"
     depends_on:
       db:
         condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "wget --spider --quiet http://localhost:${APP_PORT}/swagger/index.html"]
+      interval: 30s
+      retries: 3
 
 volumes:
   db_data:

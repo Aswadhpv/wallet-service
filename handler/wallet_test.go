@@ -10,7 +10,7 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/yourusername/wallet-service/service"
+	"github.com/Aswadhpv/wallet-service/service"
 )
 
 type mockSvc struct{}

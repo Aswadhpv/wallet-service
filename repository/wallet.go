@@ -1,4 +1,4 @@
-package repository
+﻿package repository
 
 import (
 	"context"
@@ -10,7 +10,7 @@ import (
 
 var ErrInsufficientFunds = errors.New("insufficient funds")
 
-type WalletRepo interface {
+type WalletRepository interface {
 	GetBalance(ctx context.Context, id string) (int64, error)
 	ApplyOperation(ctx context.Context, id, opType string, amount int64) error
 }
@@ -19,7 +19,7 @@ type walletRepo struct {
 	db *sqlx.DB
 }
 
-func NewWalletRepo(db *sqlx.DB) WalletRepo {
+func NewWalletRepo(db *sqlx.DB) WalletRepository {
 	return &walletRepo{db: db}
 }
 
@@ -39,14 +39,13 @@ func (r *walletRepo) ApplyOperation(ctx context.Context, id, opType string, amou
 	}
 	defer tx.Rollback()
 
-	// Lock the row
 	var bal int64
 	err = tx.GetContext(ctx, &bal, "SELECT balance FROM wallets WHERE id=$1 FOR UPDATE", id)
+
 	if err == sql.ErrNoRows {
 		if opType == "WITHDRAW" {
 			return ErrInsufficientFunds
 		}
-		bal = 0
 		_, err = tx.ExecContext(ctx,
 			"INSERT INTO wallets (id, balance) VALUES ($1, $2)", id, amount)
 		if err != nil {
