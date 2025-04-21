@@ -1,7 +1,8 @@
-package handler
+﻿package handler
 
 import (
 	"bytes"
+	"context"
 	"encoding/json"
 	"net/http"
 	"net/http/httptest"
@@ -9,18 +10,17 @@ import (
 
 	"github.com/gorilla/mux"
 	"github.com/stretchr/testify/assert"
-
-	"github.com/Aswadhpv/wallet-service/service"
 )
 
+// ✅ Mock service implementing WalletService interface
 type mockSvc struct{}
 
-func (m *mockSvc) Deposit(_, _ string, _ int64) error   { return nil }
-func (m *mockSvc) Withdraw(_, _ string, _ int64) error  { return nil }
-func (m *mockSvc) GetBalance(_, _ string) (int64, error) { return 500, nil }
+func (m *mockSvc) Deposit(ctx context.Context, walletID string, amount int64) error  { return nil }
+func (m *mockSvc) Withdraw(ctx context.Context, walletID string, amount int64) error { return nil }
+func (m *mockSvc) GetBalance(ctx context.Context, walletID string) (int64, error)    { return 500, nil }
 
 func TestCreateOperation(t *testing.T) {
-	m := NewWalletHandler(&mockSvc{})
+	m := NewWalletHandler(&mockSvc{}) 
 	body := map[string]interface{}{
 		"walletId":      "abc",
 		"operationType": "DEPOSIT",

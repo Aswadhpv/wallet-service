@@ -1,4 +1,3 @@
--- db/init.sql
 
 CREATE TABLE IF NOT EXISTS wallets (
   id UUID PRIMARY KEY,

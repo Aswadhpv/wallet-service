@@ -3,6 +3,7 @@ package handler
 import (
 	"encoding/json"
 	"net/http"
+	"strings"
 
 	"github.com/gorilla/mux"
 	"github.com/Aswadhpv/wallet-service/service"
@@ -10,11 +11,11 @@ import (
 
 // WalletHandler holds your service implementation
 type WalletHandler struct {
-	svc *service.WalletServiceImpl
+	svc service.WalletService
 }
 
 // NewWalletHandler constructs the handler
-func NewWalletHandler(s *service.WalletServiceImpl) *WalletHandler {
+func NewWalletHandler(s service.WalletService) *WalletHandler {
 	return &WalletHandler{svc: s}
 }
 
@@ -44,10 +45,14 @@ func (h *WalletHandler) CreateOperation(w http.ResponseWriter, r *http.Request) 
 	}
 
 	var err error
-	if req.OperationType == "DEPOSIT" {
+	switch strings.ToUpper(req.OperationType) {
+	case "DEPOSIT":
 		err = h.svc.Deposit(r.Context(), req.WalletID, req.Amount)
-	} else {
+	case "WITHDRAW":
 		err = h.svc.Withdraw(r.Context(), req.WalletID, req.Amount)
+	default:
+		http.Error(w, "invalid operation type", http.StatusBadRequest)
+		return
 	}
 
 	if err != nil {
