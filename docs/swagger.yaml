@@ -1,14 +1,4 @@
 basePath: /api/v1
-definitions:
-  handler.operationRequest:
-    properties:
-      amount:
-        type: integer
-      operationType:
-        type: string
-      walletId:
-        type: string
-    type: object
 host: localhost:8080
 info:
   contact: {}
@@ -19,22 +9,35 @@ paths:
   /wallet:
     post:
       consumes:
+      - application/x-www-form-urlencoded
       - application/json
       description: Performs a deposit or withdrawal on a wallet
       parameters:
-      - description: operation payload
-        in: body
-        name: payload
+      - description: Wallet ID
+        in: formData
+        name: walletId
         required: true
-        schema:
-          $ref: '#/definitions/handler.operationRequest'
+        type: string
+      - description: Operation Type
+        enum:
+        - DEPOSIT
+        - WITHDRAW
+        in: formData
+        name: operationType
+        required: true
+        type: string
+      - description: Amount (must be > 0)
+        in: formData
+        name: amount
+        required: true
+        type: integer
       produces:
-      - text/plain
+      - application/json
       responses:
         "204":
-          description: No Content
+          description: no content
         "400":
-          description: invalid request
+          description: invalid request or amount must be positive
           schema:
             type: string
         "409":

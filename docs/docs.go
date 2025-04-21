@@ -19,10 +19,11 @@ const docTemplate = `{
             "post": {
                 "description": "Performs a deposit or withdrawal on a wallet",
                 "consumes": [
+                    "application/x-www-form-urlencoded",
                     "application/json"
                 ],
                 "produces": [
-                    "text/plain"
+                    "application/json"
                 ],
                 "tags": [
                     "wallets"
@@ -30,21 +31,37 @@ const docTemplate = `{
                 "summary": "Deposit or withdraw money",
                 "parameters": [
                     {
-                        "description": "operation payload",
-                        "name": "payload",
-                        "in": "body",
-                        "required": true,
-                        "schema": {
-                            "$ref": "#/definitions/handler.operationRequest"
-                        }
+                        "type": "string",
+                        "description": "Wallet ID",
+                        "name": "walletId",
+                        "in": "formData",
+                        "required": true
+                    },
+                    {
+                        "enum": [
+                            "DEPOSIT",
+                            "WITHDRAW"
+                        ],
+                        "type": "string",
+                        "description": "Operation Type",
+                        "name": "operationType",
+                        "in": "formData",
+                        "required": true
+                    },
+                    {
+                        "type": "integer",
+                        "description": "Amount (must be \u003e 0)",
+                        "name": "amount",
+                        "in": "formData",
+                        "required": true
                     }
                 ],
                 "responses": {
                     "204": {
-                        "description": "No Content"
+                        "description": "no content"
                     },
                     "400": {
-                        "description": "invalid request",
+                        "description": "invalid request or amount must be positive",
                         "schema": {
                             "type": "string"
                         }
@@ -99,22 +116,6 @@ const docTemplate = `{
                             "type": "string"
                         }
                     }
-                }
-            }
-        }
-    },
-    "definitions": {
-        "handler.operationRequest": {
-            "type": "object",
-            "properties": {
-                "amount": {
-                    "type": "integer"
-                },
-                "operationType": {
-                    "type": "string"
-                },
-                "walletId": {
-                    "type": "string"
                 }
             }
         }

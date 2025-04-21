@@ -1,8 +1,9 @@
-package handler
+﻿package handler
 
 import (
 	"encoding/json"
 	"net/http"
+	"strconv"
 	"strings"
 
 	"github.com/gorilla/mux"
@@ -19,31 +20,69 @@ func NewWalletHandler(s service.WalletService) *WalletHandler {
 	return &WalletHandler{svc: s}
 }
 
+// operationRequest represents the parameters for deposit or withdrawal.
+// swagger:model operationRequest
 type operationRequest struct {
-	WalletID      string `json:"walletId"`
-	OperationType string `json:"operationType"`
-	Amount        int64  `json:"amount"`
+	// WalletID is the unique identifier of the wallet
+	// example: 11111111-1111-1111-1111-111111111111
+	WalletID string `json:"walletId" form:"walletId"`
+	// OperationType defines whether the operation is DEPOSIT or WITHDRAW
+	// enum: DEPOSIT,WITHDRAW
+	// example: DEPOSIT
+	OperationType string `json:"operationType" form:"operationType"`
+	// Amount to deposit or withdraw (must be > 0)
+	// example: 100
+	Amount int64 `json:"amount" form:"amount"`
 }
 
 // CreateOperation godoc
 // @Summary      Deposit or withdraw money
 // @Description  Performs a deposit or withdrawal on a wallet
 // @Tags         wallets
-// @Accept       json
-// @Produce      plain
-// @Param        payload  body      operationRequest  true  "operation payload"
-// @Success      204
-// @Failure      400      {string}  string            "invalid request"
-// @Failure      409      {string}  string            "insufficient funds"
-// @Failure      500      {string}  string            "server error"
+// @Accept       application/x-www-form-urlencoded,application/json
+// @Produce      json
+// @Param        walletId       formData  string  true  "Wallet ID"
+// @Param        operationType  formData  string  true  "Operation Type"   Enums(DEPOSIT,WITHDRAW)
+// @Param        amount         formData  int     true  "Amount (must be > 0)"
+// @Success      204  "no content"
+// @Failure      400  {string}  string  "invalid request or amount must be positive"
+// @Failure      409  {string}  string  "insufficient funds"
+// @Failure      500  {string}  string  "server error"
 // @Router       /wallet [post]
 func (h *WalletHandler) CreateOperation(w http.ResponseWriter, r *http.Request) {
 	var req operationRequest
-	if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
-		http.Error(w, "invalid request", http.StatusBadRequest)
+
+	ct := r.Header.Get("Content-Type")
+	if ct == "" || strings.HasPrefix(ct, "application/json") {
+		// JSON payload
+		if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
+			http.Error(w, "invalid request", http.StatusBadRequest)
+			return
+		}
+	} else {
+		// form-data (Swagger UI)
+		if err := r.ParseForm(); err != nil {
+			http.Error(w, "invalid request", http.StatusBadRequest)
+			return
+		}
+		req.WalletID = r.FormValue("walletId")
+		req.OperationType = r.FormValue("operationType")
+		amtStr := r.FormValue("amount")
+		amt, err := strconv.ParseInt(amtStr, 10, 64)
+		if err != nil {
+			http.Error(w, "invalid amount", http.StatusBadRequest)
+			return
+		}
+		req.Amount = amt
+	}
+
+	// Validate amount
+	if req.Amount <= 0 {
+		http.Error(w, "amount must be positive", http.StatusBadRequest)
 		return
 	}
 
+	// Normalize operation type and execute
 	var err error
 	switch strings.ToUpper(req.OperationType) {
 	case "DEPOSIT":
@@ -55,6 +94,7 @@ func (h *WalletHandler) CreateOperation(w http.ResponseWriter, r *http.Request) 
 		return
 	}
 
+	// Handle service errors
 	if err != nil {
 		if err == service.ErrInsufficientFunds {
 			http.Error(w, err.Error(), http.StatusConflict)
