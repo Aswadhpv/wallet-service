@@ -57,43 +57,22 @@ http://localhost:8080/swagger/index.html
 - POST /api/v1/wallet
 - GET /api/v1/wallets/{id}
 ```
-### 3. Test Deposit
+### 3. Test Deposit or Withdraw
 
 ```bash
 - Click POST /api/v1/wallet
 
 - Click Try it out
 
-- Paste this JSON payload: (here i put the test data you can put any different data of your choice for walletId and amount. for operationType choose DEPOSIT or WITHDRAW. Here is Test for DEPOSIT and i have given test for WITHDRAW)
-
-{
-  "walletId": "11111111-1111-1111-1111-111111111111",
-  "operationType": "DEPOSIT",
-  "amount": 1000
-}
+- Type UUID Format Wallet ID (like: "11111111-1111-1111-1111-111111111111") (if not UUID then 500 error)
+- Choose OperationType : DEPOSIT or WWITHDRAW
+- Enter amount in positive numbers.(if negative can see 400 error)
 - Click Execute
 
-You should see 204 No Content and no errors.
-```
-### 4. Test Withdraw
-
-```bash
-- Still in POST /api/v1/wallet
-
-- Change payload to: (Test for WITHDRAW)
-{
-  "walletId": "11111111-1111-1111-1111-111111111111",
-  "operationType": "WITHDRAW",
-  "amount": 200
-}
-- Click Execute
-
-- Expect 204 No Content (balance now 800).
-
-If you withdraw more than the current balance, you’ll get 409 Conflict with insufficient funds.
+You should see 204 No Content and no errors. 
 ```
 
-### 5. Test Get Balance
+### 4. Test Get Balance
 
 ```bash
 - Click GET /api/v1/wallets/{id}
